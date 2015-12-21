@@ -8,15 +8,26 @@
 <!-- fix for the template engine  -->
 
 </style>
-    <div id="feature-area" class="" style="background-image: url({% static 'img/hdr_home_quantum.jpg' %})">
+    <div id="feature-area" class="hidden-xs hidden-sm" style="background-image: url({% static 'img/hdr_home_quantum.jpg' %})">
       <div class="feature-container">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 feature-content">
-              <div class="feature-content-inner clearfix hidden-xs">
+              <div class="feature-content-inner clearfix">
                 <img src="{% static 'img/townhall_header.png' %}" class="img-responsive">
               </div>
-              <div class="feature-content-inner clearfix visible-xs-block" style="background: url({% static 'img/bg_feature_area.png' %}); padding: 25px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="feature-area" class="visible-xs-block visible-sm-block" style="background-image: url({% static 'img/hdr_home_quantum_mobile.jpg' %})">
+      <div class="feature-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 feature-content">
+              <div class="feature-content-inner clearfix" style="background: url({% static 'img/bg_feature_area.png' %}); padding: 25px;">
                 <img src="{% static 'img/townhall_header.png' %}" class="img-responsive">
               </div>
             </div>
