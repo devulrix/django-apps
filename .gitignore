@@ -64,3 +64,6 @@ db.sqlite.db
 
 #environment files
 envionments.sh
+
+#static deployment for local development
+static_root/

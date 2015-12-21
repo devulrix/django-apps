@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third party
+    'crispy_forms',
+
     #my apps
     'home',
     'schedule',
@@ -123,3 +126,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Static files for development
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static_root")
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static", "our_static"),
+]
+
+# need to implement the static files for production, serving via ECS
+
+# ToDo ECS
+
+# crispy template for our used bootstrap 3
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
